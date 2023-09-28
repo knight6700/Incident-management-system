@@ -57,6 +57,7 @@
 		1E8CB2A62AC59BEB00EE58E3 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CB29E2AC59BEB00EE58E3 /* MapAnnotationView.swift */; };
 		1E8CB2A92AC5AB5300EE58E3 /* RepoertsParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CB2A82AC5AB5300EE58E3 /* RepoertsParameters.swift */; };
 		1E8CB2AB2AC5B85500EE58E3 /* IncidentListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CB2AA2AC5B85500EE58E3 /* IncidentListViewModelTests.swift */; };
+		1E8CB2AE2AC5C87200EE58E3 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CB2AD2AC5C87200EE58E3 /* AlertItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,7 @@
 		1E8CB29E2AC59BEB00EE58E3 /* MapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		1E8CB2A82AC5AB5300EE58E3 /* RepoertsParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoertsParameters.swift; sourceTree = "<group>"; };
 		1E8CB2AA2AC5B85500EE58E3 /* IncidentListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentListViewModelTests.swift; sourceTree = "<group>"; };
+		1E8CB2AD2AC5C87200EE58E3 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +339,7 @@
 		1E8CB2322AC51DCE00EE58E3 /* SharedUI */ = {
 			isa = PBXGroup;
 			children = (
+				1E8CB2AC2AC5C85E00EE58E3 /* Alerts */,
 				1E8CB2952AC59BEB00EE58E3 /* MapFeature */,
 				1E8CB2842AC5878200EE58E3 /* DropDownPlaceholder */,
 				1E8CB2812AC5872200EE58E3 /* CustomAreaTextField */,
@@ -512,6 +515,14 @@
 			path = Requests;
 			sourceTree = "<group>";
 		};
+		1E8CB2AC2AC5C85E00EE58E3 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				1E8CB2AD2AC5C87200EE58E3 /* AlertItem.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -677,6 +688,7 @@
 				1E8CB2A62AC59BEB00EE58E3 /* MapAnnotationView.swift in Sources */,
 				1E8CB2A52AC59BEB00EE58E3 /* MapAnnotationClusterView.swift in Sources */,
 				1E8CB2232AC501D200EE58E3 /* Data+extension.swift in Sources */,
+				1E8CB2AE2AC5C87200EE58E3 /* AlertItem.swift in Sources */,
 				1E8CB2A42AC59BEB00EE58E3 /* MapAnnotation.swift in Sources */,
 				1E8CB2102AC4F96E00EE58E3 /* NetworkServices.swift in Sources */,
 				1E8CB2032AC4F10600EE58E3 /* IncidentDTO.swift in Sources */,

@@ -14,7 +14,7 @@ class IncidentListViewModel: ObservableObject {
                 : incidents.filter { $0.title.contains(searchText) }
         }
     }
-
+    
     enum Action {
         case load
         case present
@@ -25,6 +25,8 @@ class IncidentListViewModel: ObservableObject {
     var reportViewModel: CreateIncidentViewModel = .init()
 
     @Published var state: State = .init()
+    var alertItem: AlertItem?
+
     private var cancellable = Set<AnyCancellable>()
 
     func trigger(_ action: Action) {
@@ -45,7 +47,8 @@ class IncidentListViewModel: ObservableObject {
                 let incidents = try await api.fetchList()
                 state.incidents = incidentsDomain.toDomain(incidents)
             } catch {
-                print(error)
+                let error =  error as? NetworkError
+                showAlert(error: .custom(message: error?.customDescription ?? ""))
             }
             state.isLoading = false
         }
@@ -62,5 +65,9 @@ class IncidentListViewModel: ObservableObject {
         }
         .store(in: &cancellable)
 
+    }
+    @MainActor
+    func showAlert(error: CustomError) {
+        alertItem = error.showUrlAlert()
     }
 }
