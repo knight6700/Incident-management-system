@@ -18,6 +18,7 @@ Incident Management System is a versatile software tool designed to streamline i
 - **Category and Subcategory:** Organize activities into categories and subcategories.
 - **Apple Maps Integration:** Utilizes Apple Maps for accurate address decoding.
 - **Loading Indicator:** Provides a loading indicator to enhance the user experience.
+- **Unit Testing:** Perform unit testing to ensure robust functionality. 
 
 ## Dependencies:
 - [Point Free Dependencies](https://github.com/your_username/point-free-dependencies): A Swift Package Manager (SPM) package to handle live cases, testing, and previews. 
