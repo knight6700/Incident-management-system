@@ -25,6 +25,9 @@ struct IncidentListView: View {
                 CreateIncidentRepostView(viewModel: viewModel.reportViewModel)
             }
         }
+        .alert(item: $viewModel.alertItem) {
+            Alert(title: $0.title, message: $0.message, dismissButton: $0.dismissButton)
+        }
         .scrollIndicators(.hidden)
         .searchable(text: $viewModel.state.searchText) {
             ForEach(viewModel.state.searchResults, id: \.self) { result in
